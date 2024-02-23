@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace HelloWorld{
+namespace SampleNameSpace
+{
     public class HelloWorld : MonoBehaviour
     {
         // Start is called before the first frame update
