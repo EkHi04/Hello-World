@@ -5,7 +5,7 @@
 
 namespace clasePlayer{
 
-    class enemy : character
+    class enemy : Character
     {
         public enemy(string name) : base(name)
         {
@@ -13,7 +13,7 @@ namespace clasePlayer{
     }
 
 
-    class player : character
+    class player : Character
 
     {
         public player(string name) : base(name)
