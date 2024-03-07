@@ -11,7 +11,13 @@ public class Saltar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        createCubeandSetParent();
+    }
+
+    private void createCubeandSetParent()
+    {
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.transform.SetParent(this.transform);
     }
 
     // Update is called once per frame
@@ -66,4 +72,5 @@ public class Saltar : MonoBehaviour
     {
         this.transform.rotation *= Quaternion.Euler(0, 1*speed, 0);
     }
+
 }
