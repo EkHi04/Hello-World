@@ -19,6 +19,7 @@ public class Saltar : MonoBehaviour
     {
         checkMovement();
         checkScale();
+        checkRotation();
     }
     private void checkMovement()
     {
@@ -59,5 +60,10 @@ public class Saltar : MonoBehaviour
         {
             this.transform.localScale += Vector3.right * speed;
         }
+    }
+
+    private void checkRotation()
+    {
+        this.transform.rotation *= Quaternion.Euler(0, 1*speed, 0);
     }
 }
